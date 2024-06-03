@@ -2490,3 +2490,5 @@ func (r *Cluster) validateHibernationAnnotation() field.ErrorList {
 		),
 	}
 }
+
+// TODO: validation of servicetemplate
