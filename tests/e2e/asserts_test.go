@@ -2840,7 +2840,6 @@ func AssertPvcHasLabels(
 				expectedLabels := map[string]string{
 					utils.ClusterLabelName:             clusterName,
 					utils.PvcRoleLabelName:             ExpectedPvcRole,
-					utils.ClusterRoleLabelName:         ExpectedRole,
 					utils.ClusterInstanceRoleLabelName: ExpectedRole,
 				}
 				g.Expect(testsUtils.PvcHasLabels(pvc, expectedLabels)).To(BeTrue(),
